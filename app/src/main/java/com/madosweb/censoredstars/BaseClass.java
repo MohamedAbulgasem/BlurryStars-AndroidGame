@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 
+import java.util.Objects;
+
 /**
  * Created by Mohamed Abulgasem on 2018/05/09.
  */
@@ -21,6 +23,8 @@ public abstract class BaseClass extends AppCompatActivity {
     void setActivityBase(Context context) {
         this.context = context;
         validateAccessToken(context);
+        if (!(context instanceof MainActivity))
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     /**
@@ -53,6 +57,12 @@ public abstract class BaseClass extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
     /**
