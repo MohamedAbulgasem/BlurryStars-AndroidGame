@@ -37,7 +37,7 @@ public class MainActivity extends BaseClass {
      * @param view View
      */
     public void onExit(View view) {
-        finishAndRemoveTask();
+        moveTaskToBack(true);
     }
 
     /**
