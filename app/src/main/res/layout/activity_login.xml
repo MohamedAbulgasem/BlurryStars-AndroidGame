@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/layoutBackground"
+    android:orientation="vertical"
+    tools:context="com.madosweb.censoredstars.LoginActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="180dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/balls_falling" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/censored_stars_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/info"/>
+
+        <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12sp"
+        android:text="@string/login_string"/>
+
+    </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

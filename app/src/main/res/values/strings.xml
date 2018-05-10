@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Censored Stars</string>
+    <string name="facebook_app_id">2008270892824640</string>
+    <string name="fb_login_protocol_scheme">fb2008270892824640</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_logout">Log out</string>
+    <string name="login_string">Log in to your Facebook account to connect to Censored Stars</string>
+</resources>

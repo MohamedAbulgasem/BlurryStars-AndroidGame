@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layoutBackground"
+    tools:context="com.madosweb.censoredstars.MainActivity">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/guess" />
+
+    <Button
+        android:id="@+id/start_game_btn"
+        android:onClick="onStartGame"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="START GAME"
+        android:textColor="@color/layoutBackground"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/view_profile_btn"
+        android:onClick="onViewProfile"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="VIEW PROFILE"
+        android:textColor="@color/layoutBackground"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:onClick="onExit"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="EXIT"
+        android:textColor="@color/layoutBackground"
+        android:textSize="20sp"/>
+
+</LinearLayout>
