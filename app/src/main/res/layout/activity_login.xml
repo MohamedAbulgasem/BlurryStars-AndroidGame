@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/layoutBackground"
     android:orientation="vertical"
-    tools:context="com.madosweb.censoredstars.LoginActivity">
+    tools:context="com.madosweb.blurrystars.LoginActivity">
 
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="180dp"
@@ -19,7 +19,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"
-        android:src="@mipmap/censored_stars_logo" />
+        android:src="@mipmap/blurry_stars_logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
